@@ -151,7 +151,7 @@ class DayPicker extends React.Component {
     }
 
     const translationValue = props.isRTL && this.isHorizontal()
-      ? -getCalendarMonthWidth(props.daySize)
+      ? getCalendarMonthWidth(props.daySize)
       : 0;
 
     this.hasSetInitialVisibleMonth = !props.hidden;
